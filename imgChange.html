@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>HTML DoM</title>
+    <script>
+        function cImg()
+        {
+         var imgs=document.getElementById("zub");
+         s=imgs.src;
+         w=imgs.width;
+         h=imgs.height;
+         imgs.src="sunset.jpg"
+         imgs.width="500";
+         imgs.height="500"   
+            
+        }
+        function oImg()
+        {
+            var imgs=document.getElementById("zub")
+        imgs.src=s;
+        imgs.width=w;
+        imgs.height=h;
+        }
+    </script>
+</head>
+<body>
+    <img src="login.jpg" width="400" height="300" id="zub" 
+    onmouseover="cImg()" onmouseout="oImg()" />
+    
+</body>
+</html>

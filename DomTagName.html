@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Dom Tag Name</title>
+    <script>
+    function doM(){
+      //  alert("Hello babu")
+         var pra  =document.getElementsByTagName("p");
+         for(i=0;i<pra.length;i++){
+        //    alert(pra[i].firstChild.nodeName);
+            pra[i].style.color="red";
+            pra[i].style.backgroundColor="yellow"
+            pra[i].style.paddingLeft="30px"  
+         }
+    }
+    </script>
+
+</head>
+<body>
+    <P> live in pune </P>
+    <P>Zubair Solanki live in pune </P>
+    <P>Zubair Solanki live in pune </P>
+    <P>Zubair Solanki live in pune </P>
+    <button onclick="doM()">Change</button>
+</body>
+</html>

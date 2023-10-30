@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dom Structure</title>
+    <script>
+        function addLink(){
+            var anode=document.createElement("a");
+            var txtnode=document.createTextNode("Click")
+            anode.appendChild(txtnode);
+            anode.setAttribute("href","imgChange.html")
+            document.body.appendChild(anode);
+            // document.getElementById("btn").disabled=true;
+            var btnode=document.getElementById("btn")
+            document.body.removeChild(btnode);            
+        }
+    </script>
+</head>
+<body>
+    <button id="btn" onclick="addLink()" >Add Link</button>
+    <!-- <button id="btn" onclick="addLink()" disabled >Add Link</button> -->
+</body>
+</html>
